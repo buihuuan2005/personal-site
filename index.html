@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-secondary-subtle sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center g-3 mt-5">
+                    <div class="col-10 col-sm-8 col-lg-4 d-flex justify-content-center">
+                        <img src="./asset/avatar.avif" class="d-flex justify-content-center" alt="2d-avatar"
+                            height="300px" loading="lazy">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <h1 class="lh-1 mb-3 text-lg-start text-center">Transitioning from Computer
+                            Engineering to Front-end Development.</h1>
+                        <p style="color: slategrey;">A fourth-year Computer Engineering student with a strong
+                            systems-thinking mindset,
+                            currently self-studying full-stack
+                            web development. Currently focusing intensively on front-end technologies (HTML5, CSS3,
+                            JavaScript) with the goal of
+                            securing a front-end internship.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-lg-start justify-content-md-center">
+                            <!-- View Projects -->
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 mb-2">
+                                <a href="#projects" style="text-decoration: none; color: inherit">View Project</a>
+                            </button>
+                            <!-- Contact me -->
+                            <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2 mb-2">
+                                <a href="#contact" style="text-decoration: none; color: inherit">Contact me</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about-me section -->
+        <div id="about-me" class="container-fluid mt-5">
+            <div class="row flex-row py-2 justify-content-center rounded-3 m-3" style=" background-color: #e5e5e5;">
+                <h2 class="about-me-title d-flex justify-content-center">About me</h2>
+                <div class="card col-11 col-md my-2 mx-2 px-0">
+                    <p class="card card-header flex-row justify-content-between align-items-center px-3"
+                        style="font-weight: 500;">
+                        Background
+                        <img src="./asset/icon-1.jpg" alt="chip-icon" height="25px">
+                        </h6>
+                    <div class="card-text">
+                        <p class="m-3">
+                            As a fourth-year Computer Engineering student, I have gained in-depth exposure to
+                            computer
+                            architecture,
+                            microcontrollers, and system logic.
+                        </p>
+                        <p class="m-3">
+                            Driven by a strong passion for creating user interfaces and interactive user
+                            experiences, I have taken the initiative to systematically learn web development through
+                            intensive bootcamps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card col-11 col-md my-2 mx-2 px-0">
+                    <p class="card card-header flex-row justify-content-between align-items-center px-3"
+                        style="font-weight: 500;">
+                        Engineering Mindset
+                        <img src="./asset/icon-2.jpg" alt="chip-icon" height="25px">
+                    </p>
+                    <div class="card-text">
+                        <p class="m-3">
+                            The logical thinking derived from computer engineering helps me write clean JavaScript code,
+                            optimize the DOM, and easily grasp algorithms for client-side data processing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <!-- skill section -->
+        <section id="skill" class="container-fluid mt-5">
+            <div class="row flex-row justify-content-center m-3">
+                <h2 class="d-flex justify-content-center">Skill</h2>
+                <div class="card proficient col-11 col-md px-0 m-2">
+                    <h6 class="card-header">Proficient</h6>
+                    <div class="card-body row flex-row">
+                        <div class="skill-tag">HTML5</div>
+                        <div class="skill-tag">CSS3</div>
+                        <div class="skill-tag">Bootstrap</div>
+                        <div class="skill-tag">Git</div>
+                    </div>
+                </div>
+                <div class="card in-progress col-11 col-md  px-0 m-2">
+                    <h6 class="card-header">In Progress</h6>
+                    <div class="card-body row flex-row">
+                        <div class="skill-tag">JavaScript (ES6+)</div>
+                        <div class="skill-tag">DOM</div>
+                        <div class="skill-tag">Async</div>
+                        <div class="skill-tag">Fetch API</div>
+                    </div>
+                </div>
+                <div class="card upcoming col-11 col-md  px-0 m-2">
+                    <h6 class="card-header">Upcoming</h6>
+                    <div class="card-body row flex-row">
+                        <div class="skill-tag">ReactJS</div>
+                        <div class="skill-tag">Tailwind</div>
+                        <div class="skill-tag">Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section id="projects" class="project py-5">
+
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" class="contact py-5"></section>
+    </main>
+
+    <footer class=""></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
